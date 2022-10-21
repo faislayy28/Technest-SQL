@@ -8,6 +8,9 @@ insert into practice values(3,'yellow',null,'violet');
 Select * from practice
 where c1 = 'yellow' or c2 = 'yellow' or c3 = 'yellow';
 
+SELECT * FROM practice
+WHERE 'yellow' in (c1,c2,c3);
+
 --ID	C1	C2	C3
 --1	red	yellow	blue
 --3	yellow	 - 	violet
